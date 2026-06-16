@@ -1,0 +1,81 @@
+Search for a Property
+Basic Display
+ILS/Account Integration
+  Enable Cost Savings
+  Cost Savings Enabled Explanation
+  Cost Savings Disabled Explanation
+Payment History
+  Show Payment History for Fines Paid in Aspen
+  Payment History Explanation
+  Delete Payment History Older than (days)
+Grouped Work Display Settings
+Searching
+  Restrict Search By Library
+  Public Lists To Include
+  Allow Automatic Search Corrections
+  Enable Search Interpreter
+  Search Box
+    Systems To Repeat In
+    Repeat Search Options (requires Restrict Search to Library to be ON)
+    Repeat In Online Collection
+    Show Advanced Search Option
+    Show Website Search
+  Search Facets
+    Library System Facet Label
+    Restrict Library System, Branch, Available At Facets, and Call Numbers to this library
+    Show Available At Any Location?
+    Additional Locations to Include in Available At Facet
+    Locations to Exclude from Available At Facet
+Series Search Mode
+Combined Results
+  Enable Combined Results
+  Combined Results Label
+  Default To Combined Results
+Explore More Bar Section
+  Display Explore More Bar in Catalog Search Results
+  Display Explore More Bar in Summon Search Results
+  Display Explore More Bar in Ebsco EDS Search Results
+  Display Explore More Bar in Ebsco Host Search Results
+  Display Explore More Bar in Gale Search Results
+Catalog Enrichment
+  Enable User Lists
+  Enable List Descriptions & Notes
+  Allowable List Names
+  Hide Soft Delete UI for Lists
+  Enable Option to Import Lists From Old Catalog
+  Show Wikipedia Content
+  Show Citation Style Guides
+  NoveList Select Profile
+  Syndetics Setting
+  Loral Setting
+Events
+  Aspen Events to Include
+  Allow Event Registration
+Full Record Display
+  Show Email This
+  Show Sharing To Twitter/X
+  Show Sharing To Facebook
+  Show Sharing To Pinterest
+  Show Generic Sharing Link
+Holdings Summary
+  Show It's Here
+  Show Hold and Copy Counts
+  Show On Order Counts
+Data Protection Regulations
+  Require Cookie Storage Consent
+  Cookie Policy
+
+Community Engagement
+Include Campaign Leaderboard
+Campaign Leaderboard Display
+Allow Admin to Enroll Users in Admin View
+Display only users for current library location in user admin view.
+Display Digital Reward Only When Awarded
+Digital Reward Placeholder Image
+Digital Reward Placeholder Image
+Send email to library when a user completes a campaign
+Email to receive notifications when patrons complete campaigns
+
+CloudSource
+Repeat In CloudSource
+CloudSource URL

@@ -1,0 +1,101 @@
+Search for a Property
+Basic Display
+ILS/Account Integration
+  Show Card Expiration Date
+  Show Patron Type on Library Card
+  Show Expiration Warnings
+  Expiration Near Message
+  Expired Message
+  Show While You Wait
+  Show You Might Also Like
+  Show Messaging Settings
+  Allow Linked Accounts
+  Allow Filtering of Linked Accounts in Holds
+  Allow Filtering of Linked Accounts in Checked Out Titles
+  Allow Ability To Export Only Selected Holds
+  Allow Ability To Export Only Selected Checkouts
+  Show Library Hours Notice on Account Pages
+  Enable Cost Savings
+  Cost Savings Enabled Explanation
+  Cost Savings Disabled Explanation
+  Enable Saved Searches
+  Show Circulation Modules to Users in My Account
+  Show Contact Information to Users in My Account
+  Show Preferences to Users in My Account
+  Barcode
+    Library Barcode Style
+    Min Barcode Length
+    Max Barcode Length
+    Barcode Prefix
+  Alternate Library Card
+    Show Alternate Library Card
+    Alternate Library Card Barcode Style
+    Show Alternate Library Card PIN/Password
+    Alternate Library Card Form Message
+    Alternate Library Card Label
+    Alternate Library Card Password / PIN Label
+  User Profile
+    Patron Display Name Style
+    Allow Patrons to Update Their Home Library
+    Use All Caps When Updating Profile
+    Require Numeric Phone Numbers When Updating Profile
+    Allow Patrons to Update their Alternate Pickup Locations
+  Holds
+    Show Hold Button
+    Show Hold Button within the search results
+    Show Hold Button for items that are checked out only
+    Hide Pickup Location Prompt
+    Allow Patrons to Update Their Preferred Pickup Location
+    Allow Patrons to remember their preferred pickup location
+    Show Hold Cancellation Date
+    Show Holds Ready For Pickup Section For Physical Materials
+    Show ILS Hold Position
+    Show "Log Me Out" Option When Placing Holds
+    Treat holds for formats that allow either bib or item holds as
+    Show volumes with local copies first when placing holds
+    Hold Disclaimer
+    Delay showing holds available for # of days
+  Login
+    Show Login Button
+    Prevent Login for Patrons of this Library
+    Prevented Login Message
+    Prevent Login for Expired Cards
+    Check "Remember Me" by default when outside the library
+    Login Form Username Label
+    Login Form Password Label
+    Login Notes
+    Allow Login to Patrons of this Library Only
+    Message for Patrons of Other Libraries
+  Reading History
+    Enable Reading History
+    Enable Add To Reading History
+    Opting In to Reading History Updates ILS Settings
+    Opting Out of Reading History Updates ILS Settings
+Series Search Mode
+Explore More Bar Section
+  Display Explore More Bar in Catalog Search Results
+  Display Explore More Bar in Summon Search Results
+  Display Explore More Bar in Ebsco EDS Search Results
+  Display Explore More Bar in Ebsco Host Search Results
+  Display Explore More Bar in Gale Search Results
+Events
+  Aspen Events to Include
+  Allow Event Registration
+Data Protection Regulations
+  Require Cookie Storage Consent
+  Cookie Policy
+
+Community Engagement
+Include Campaign Leaderboard
+Campaign Leaderboard Display
+Allow Admin to Enroll Users in Admin View
+Display only users for current library location in user admin view.
+Display Digital Reward Only When Awarded
+Digital Reward Placeholder Image
+Digital Reward Placeholder Image
+Send email to library when a user completes a campaign
+Email to receive notifications when patrons complete campaigns
+
+CloudSource
+Repeat In CloudSource
+CloudSource URL

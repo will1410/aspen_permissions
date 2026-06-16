@@ -1,0 +1,22 @@
+Home > Browse > Administration Home > Aspen LiDA > Self-Check Settings
+
+Name
+Enable Self-Check
+Assign Checkouts To
+Type of keyboard to use for barcode entry
+Valid Barcode Styles
+  Supported Styles
+Locations
+  Select All
+  Location 1
+  Location 2
+
+
+Home > Browse > Administration Home > Aspen LiDA > Self Check Completion Messages
+
+Name
+Formats to show message for (Regex)
+Owning Locations to show message for (Regex)
+Checkout Locations to show message for (Regex)
+Require Confirmation of Message
+Completion Message

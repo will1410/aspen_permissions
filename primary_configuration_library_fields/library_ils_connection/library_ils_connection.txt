@@ -1,0 +1,107 @@
+Search for a Property
+Basic Display
+ILS/Account Integration
+  ILS Code
+  Enable Cost Savings
+  Cost Savings Enabled Explanation
+  Cost Savings Disabled Explanation
+  User Profile
+    Allow Profile Updates
+    Allow Patrons to Update Their Username
+    Allow Patrons to Update Their Name
+    Use Preferred Name In Place of First Name
+    Allow Patrons to Update Their Date of Birth
+    Allow Patrons to Update Their Address
+    Allow Patrons to Update Their Phone Number
+    Bypass Review Queue When Updating Profile
+  Password / PIN
+    Allow Password / PIN Reset
+    Minimum Password / PIN Length
+    Maximum Password / PIN Length
+    Only digits allowed in Password / PIN
+  Holds
+    Show Hold Button
+    Show Hold Button within the search results
+    Show Hold Button for items that are checked out only
+    Hide Pickup Location Prompt
+    Allow Patrons to Update Their Preferred Pickup Location
+    Allow Patrons to remember their preferred pickup location
+    Show Hold Cancellation Date
+    Default Hold Cancellation Date
+    Maximum Hold Cancellation Date
+    Show Holds Ready For Pickup Section For Physical Materials
+    Show ILS Hold Position
+    Show "Log Me Out" Option When Placing Holds
+    Treat holds for formats that allow either bib or item holds as
+    Show volumes with local copies first when placing holds
+    Allow Changing Pickup Location For Unavailable Holds
+    Allow Freezing Holds
+    Max Days to Freeze Holds
+    Offer Immediate Hold Freeze
+    In System Pickups Only
+    Valid Pickup Library Systems
+    Hold Disclaimer
+    Delay showing holds available for # of days
+    Prompt for Edition when Placing Holds?
+  Checkouts
+    Display item barcodes in patron checkouts
+    Display if patron checkouts have holds on them
+    Always display the number of renewals on a checkout
+  Login
+    Show Login Button
+    Prevent Login for Patrons of this Library
+    Prevented Login Message
+    Prevent Login for Expired Cards
+    Check "Remember Me" by default when outside the library
+    Login Form Username Label
+    Login Form Password Label
+    Login Notes
+    Enable "Forgot Password?" Link on Login Screen
+    Enable "Forgot Barcode?" Link on Login Screen
+    Allow Login to Patrons of this Library Only
+    Message for Patrons of Other Libraries
+  Messages
+    Show OPAC Notes
+    Show Borrower Notes
+    Show Debarment Notes
+  Masquerade Mode
+    Allow Masquerade Mode
+    Masquerade Mode Automatic Timeout Length
+    Allow Display of Reading History in Masquerade Mode
+    Allow Masquerading Using Username
+  Reading History
+    Display Call Number in Checkout History
+    Display Volume in Checkout History
+Series Search Mode
+Explore More Bar Section
+  Display Explore More Bar in Catalog Search Results
+  Display Explore More Bar in Summon Search Results
+  Display Explore More Bar in Ebsco EDS Search Results
+  Display Explore More Bar in Ebsco Host Search Results
+  Display Explore More Bar in Gale Search Results
+Events
+  Aspen Events to Include
+  Allow Event Registration
+Holidays and Special Hours
+  Automatically Update Holidays from the ILS
+Course Reserves
+  Enable Repeat Search in Course Reserves
+  Course Reserve Libraries To Include (regex)
+Data Protection Regulations
+  Require Cookie Storage Consent
+  Cookie Policy
+
+Community Engagement
+Include Campaign Leaderboard
+Campaign Leaderboard Display
+Allow Admin to Enroll Users in Admin View
+Display only users for current library location in user admin view.
+Display Digital Reward Only When Awarded
+Digital Reward Placeholder Image
+Digital Reward Placeholder Image
+Send email to library when a user completes a campaign
+Email to receive notifications when patrons complete campaigns
+
+CloudSource
+Repeat In CloudSource
+CloudSource URL

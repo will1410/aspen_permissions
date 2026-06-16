@@ -1,0 +1,47 @@
+Home > Browse > Administration Home > Aspen LiDA > General Settings
+
+Name
+Automatically rotate the library card screen to landscape
+Enable self-registration
+Show More Info button on Grouped Work Screen
+Libraries
+  Select All
+  Library 1
+  Library 2
+
+
+Home > Browse > Administration Home > Aspen LiDA > Location Settings
+
+Name
+Display location(s) in Aspen LiDA
+Release Channel
+Locations
+  Select All
+  Location 1
+  Location 2
+
+
+Home > Browse > Administration Home > Aspen LiDA > Notification Settings
+
+Name
+Send In-App Notifications To
+Notification Types
+Saved Searches
+Custom Alerts
+Account Alerts
+ILS Notification Settings
+Libraries
+  Select All
+  Library 1
+  Library 2
+
+
+Home > Browse > Administration Home > Aspen LiDA > ILS Notification Settings
+
+Name
+Account Profile
+Message Types
+Applies to Aspen LiDA Notification Settings
+  Select All
+  LiDA 1
+  LiDA 2

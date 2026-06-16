@@ -1,0 +1,60 @@
+Search for a Property
+Basic Display
+ILS/Account Integration
+  Enable Cost Savings
+  Cost Savings Enabled Explanation
+  Cost Savings Disabled Explanation
+Series Search Mode
+Explore More Bar Section
+  Display Explore More Bar in Catalog Search Results
+  Display Explore More Bar in Summon Search Results
+  Display Explore More Bar in Ebsco EDS Search Results
+  Display Explore More Bar in Ebsco Host Search Results
+  Display Explore More Bar in Gale Search Results
+Events
+  Aspen Events to Include
+  Allow Event Registration
+Interlibrary loans
+  Local ILL Request Type
+  Email to send local ILL requests that cannot be placed automatically
+  Local ILL Email Success Message
+  Maximum Local ILL Requests
+  Include Remote Checkouts in Max Local ILL requests
+  Interlibrary Loan System
+  Name of Interlibrary Loan Service
+  Interlibrary Loan URL
+
+  Interlibrary Loan Item Types
+  INN-Reach
+    Repeat In INN-Reach
+    Enable INN-Reach Integration
+    Show INN-Reach Results At End Of Search
+  SHAREit
+    Repeat In SHAREit
+    SHAREit CID
+    SHAREit LID
+    SHAREit Username
+    SHAREit Password
+    SHAREit Password
+  WorldCat
+    Repeat In WorldCat
+    WorldCat URL
+    WorldCat QT
+Data Protection Regulations
+  Require Cookie Storage Consent
+  Cookie Policy
+
+Community Engagement
+Include Campaign Leaderboard
+Campaign Leaderboard Display
+Allow Admin to Enroll Users in Admin View
+Display only users for current library location in user admin view.
+Display Digital Reward Only When Awarded
+Digital Reward Placeholder Image
+Digital Reward Placeholder Image
+Send email to library when a user completes a campaign
+Email to receive notifications when patrons complete campaigns
+
+CloudSource
+Repeat In CloudSource
+CloudSource URL

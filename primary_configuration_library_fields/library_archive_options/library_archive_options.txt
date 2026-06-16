@@ -1,0 +1,37 @@
+Search for a Property
+Basic Display
+ILS/Account Integration
+  Enable Cost Savings
+  Cost Savings Enabled Explanation
+  Cost Savings Disabled Explanation
+Series Search Mode
+Explore More Bar Section
+  Display Explore More Bar in Catalog Search Results
+  Display Explore More Bar in Summon Search Results
+  Display Explore More Bar in Ebsco EDS Search Results
+  Display Explore More Bar in Ebsco Host Search Results
+  Display Explore More Bar in Gale Search Results
+Events
+  Aspen Events to Include
+  Allow Event Registration
+Data Protection Regulations
+  Require Cookie Storage Consent
+  Cookie Policy
+
+Community Engagement
+Include Campaign Leaderboard
+Campaign Leaderboard Display
+Allow Admin to Enroll Users in Admin View
+Display only users for current library location in user admin view.
+Display Digital Reward Only When Awarded
+Digital Reward Placeholder Image
+Digital Reward Placeholder Image
+Send email to library when a user completes a campaign
+Email to receive notifications when patrons complete campaigns
+
+CloudSource
+Repeat In CloudSource
+CloudSource URL
+
+DPLA
+Include DPLA content in search results

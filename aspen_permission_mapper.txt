@@ -1,0 +1,168 @@
+// ==UserScript==
+// @name         Aspen Permission Mapper
+// @namespace    http://tampermonkey.net
+// @version      2.2
+// @description  Copies permission HTML with descriptions in parentheses, selected dropdown options in brackets, and dropdown labels completely omitted.
+// @author       Your Name
+// @match        https://nekls-digital.aspendiscovery.org/Admin*
+// @grant        none
+// ==/UserScript==
+
+(function() {
+    'use strict';
+
+    function injectFloatingButton() {
+        if (document.getElementById('permission-copy-btn')) return;
+
+        const copyBtn = document.createElement('button');
+        copyBtn.id = 'permission-copy-btn';
+        copyBtn.textContent = '📋 Copy Active Permissions (HTML)';
+        copyBtn.style.position = 'fixed';
+        copyBtn.style.top = '20px';
+        copyBtn.style.right = '20px';
+        copyBtn.style.zIndex = '99999';
+        copyBtn.style.padding = '12px 18px';
+        copyBtn.style.backgroundColor = '#2563eb';
+        copyBtn.style.color = '#ffffff';
+        copyBtn.style.border = 'none';
+        copyBtn.style.borderRadius = '6px';
+        copyBtn.style.cursor = 'pointer';
+        copyBtn.style.fontWeight = 'bold';
+        copyBtn.style.boxShadow = '0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)';
+        copyBtn.style.fontFamily = 'sans-serif';
+        copyBtn.style.transition = 'background-color 0.2s, transform 0.1s';
+
+        copyBtn.onmouseenter = () => copyBtn.style.backgroundColor = '#1d4ed8';
+        copyBtn.onmouseleave = () => copyBtn.style.backgroundColor = '#2563eb';
+        copyBtn.onmousedown = () => copyBtn.style.transform = 'scale(0.95)';
+        copyBtn.onmouseup = () => copyBtn.style.transform = 'scale(1)';
+
+        document.body.appendChild(copyBtn);
+
+        copyBtn.addEventListener('click', function() {
+            let selectedRoleText = '';
+            const roleDropdown = document.getElementById('roleid');
+
+            if (roleDropdown && roleDropdown.selectedIndex !== -1) {
+                selectedRoleText = roleDropdown.options[roleDropdown.selectedIndex].text;
+            } else {
+                const backupHeader = document.querySelector('h1');
+                if (backupHeader && backupHeader.textContent.toLowerCase().includes('permissions for')) {
+                    selectedRoleText = backupHeader.textContent.replace(/permissions for/i, '').trim();
+                } else {
+                    selectedRoleText = "Unknown Role (Dropdown element not accessible)";
+                }
+            }
+
+            const uniqueDataMap = new Map();
+            const panels = document.querySelectorAll('.panel, .accordion-group, .accordion-item, [role="tabpanel"], .panel-default');
+
+            panels.forEach(panel => {
+                let panelTitleText = "Unnamed Section";
+                const headingEl = panel.closest('.panel-default, .accordion-item')?.querySelector('.panel-title, .accordion-header, h2, h3, h4, a[data-toggle="collapse"]') || panel.querySelector('.panel-heading, .accordion-header');
+
+                if (headingEl) {
+                    panelTitleText = headingEl.textContent.trim();
+                }
+
+                if (!panelTitleText || panelTitleText === "Unnamed Section") return;
+
+                if (!uniqueDataMap.has(panelTitleText)) {
+                    uniqueDataMap.set(panelTitleText, new Set());
+                }
+
+                const currentPanelRules = uniqueDataMap.get(panelTitleText);
+                const rows = panel.querySelectorAll('.form-group, .row, tr, li, [id*="permission"]');
+
+                rows.forEach(row => {
+                    const checkbox = row.querySelector('input[type="checkbox"]');
+                    const select = row.querySelector('select');
+
+                    let shouldInclude = false;
+                    let detailHtml = '';
+
+                    let labelText = row.querySelector('#permissionLabel')?.textContent.trim() || row.querySelector('label')?.textContent.trim() || '';
+                    let descText = row.querySelector('#permissionDescription')?.textContent.trim() || row.querySelector('.help-block, .description, small, .text-muted')?.textContent.trim() || '';
+
+                    if (labelText.toLowerCase().includes('permissions for') && labelText.toLowerCase().includes(selectedRoleText.toLowerCase())) {
+                        return;
+                    }
+
+                    const formattedDesc = descText ? `(${descText})` : '';
+
+                    // Rule 1: Checkbox checked -> Label, <br>, (Description).
+                    if (checkbox && checkbox.checked) {
+                        shouldInclude = true;
+                        detailHtml = `    <li>\n      ${labelText}\n      <br>\n      ${formattedDesc}\n    </li>`;
+                    }
+                    // Rule 2: Dropdown chosen -> [Dropdown text], <br>, (Description). Label is omitted entirely.
+                    else if (select && select.id !== 'roleid') {
+                        const selectedOpt = select.options[select.selectedIndex];
+                        const selectedVal = selectedOpt?.value?.toLowerCase() || '';
+                        const selectedText = selectedOpt?.text || '';
+
+                        if (selectedVal !== '' && selectedVal !== 'none' && !selectedText.toLowerCase().includes('none')) {
+                            shouldInclude = true;
+                            detailHtml = `    <li>\n      [${selectedText}]\n      <br>\n      ${formattedDesc}\n    </li>`;
+                        }
+                    }
+
+                    // For dropdowns, we bypass the labelText empty check since label text is intentionally dropped
+                    if (shouldInclude && (labelText !== '' || select)) {
+                        currentPanelRules.add(detailHtml);
+                    }
+                });
+            });
+
+            let htmlOutput = `<p><strong>Permission group:</strong> ${selectedRoleText}</p>\n<ul>\n`;
+            let activePanelsCount = 0;
+            const totalActivePanels = Array.from(uniqueDataMap.values()).filter(s => s.size > 0).length;
+
+            uniqueDataMap.forEach((rulesSet, panelTitle) => {
+                if (rulesSet.size > 0) {
+                    activePanelsCount++;
+                    htmlOutput += `  <li>\n    <strong>${panelTitle}</strong>\n    <ul>\n`;
+                    rulesSet.forEach(ruleBlock => {
+                        htmlOutput += ruleBlock + '\n';
+                    });
+                    htmlOutput += `    </ul>\n  </li>`;
+
+                    if (activePanelsCount < totalActivePanels) {
+                        htmlOutput += `\n  <br>\n`;
+                    } else {
+                        htmlOutput += `\n`;
+                    }
+                }
+            });
+
+            htmlOutput += `</ul>`;
+
+            if (activePanelsCount === 0) {
+                htmlOutput = `<p><strong>Permission group:</strong> ${selectedRoleText}</p>\n<p>No active checkboxes or dropdown allocations found for this group.</p>`;
+            }
+
+            navigator.clipboard.writeText(htmlOutput.trim()).then(() => {
+                const originalText = copyBtn.textContent;
+                copyBtn.textContent = '✅ HTML Copied!';
+                copyBtn.style.backgroundColor = '#16a34a';
+
+                setTimeout(() => {
+                    copyBtn.textContent = originalText;
+                    copyBtn.style.backgroundColor = '#2563eb';
+                }, 2000);
+            }).catch(err => {
+                console.error('Could not copy HTML data: ', err);
+                alert('Clipboard copy failed.');
+            });
+        });
+    }
+
+    if (document.readyState === 'complete' || document.readyState === 'interactive') {
+        injectFloatingButton();
+    } else {
+        window.addEventListener('DOMContentLoaded', injectFloatingButton);
+        window.addEventListener('load', injectFloatingButton);
+    }
+
+    setInterval(injectFloatingButton, 2000);
+})();
