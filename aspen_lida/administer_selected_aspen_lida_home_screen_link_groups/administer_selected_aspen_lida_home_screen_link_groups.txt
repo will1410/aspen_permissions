@@ -1,1 +1,20 @@
-File auto-generated on 6/15/2026 9:11:36 AM
+Home > Browse > Administration Home > Aspen LiDA > Home Screen Link Groups
+
+Name
+Home Screen Links
+
+
+Home > Browse > Administration Home > Aspen LiDA > Home Screen Links
+
+Title
+textId
+Share With
+Library
+Type of Icon
+Google Material Icon Name
+Upload an Icon
+Upload an Icon
+On tap, send user to
+Aspen LiDA Screen
+Search Term
+External URL

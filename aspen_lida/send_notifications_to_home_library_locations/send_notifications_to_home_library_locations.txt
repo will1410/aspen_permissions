@@ -1,1 +1,29 @@
-File auto-generated on 6/15/2026 9:11:36 AM
+Home > Browse > Administration Home > Aspen LiDA > LiDA Notifications
+
+Title
+Message
+Sends on
+Expires on
+On tap, send user to
+Aspen LiDA Screen
+Id for Object
+External URL
+Libraries
+  Select All
+  Library 1
+  Library 2
+Locations
+  Select All
+  Location 1
+  Location 2
+Patron Types
+  Select All
+  Patron Type 1
+  Patron Type 2
+Notification sent
+
+
+Home > Browse > Administration Home > Aspen LiDA > Notification Testing Tool
+
+Barcode or Username of Patron to Send Notification To
+Receipt ID
