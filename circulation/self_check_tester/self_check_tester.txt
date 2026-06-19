@@ -1,1 +1,12 @@
-File auto-generated on 6/15/2026 9:18:41 AM
+Home > Browse > Administration Home > ILS Integration > Self Check Tester
+
+Self Check Tester
+  Test Check Outs
+    Patron Barcode
+    Patron Password / PIN
+    Item Barcode
+
+  Test Check Ins
+    Patron Barcode
+    Patron Password / PIN
+    Item Barcode
